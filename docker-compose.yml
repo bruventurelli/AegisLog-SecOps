@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  aegislog-engine:
+    build: .
+    container_name: aegislog_secops
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./:/app
